@@ -1,0 +1,51 @@
+/* ==========================================
+                CONTACT
+========================================== */
+
+.contact {
+    padding: 10rem 0 6rem;
+}
+
+/* Contact Section Layout */
+.contact__container {
+    display: grid;
+    grid-template-columns: 40% 55%;
+    gap: 5%;
+    align-items: start;
+}
+
+/* Contact Information */
+.contact__info h1 {
+    margin-bottom: 1rem;
+}
+
+.contact__info p {
+    margin-bottom: 1rem;
+}
+
+/* Contact Form */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Form Inputs */
+.contact__form input,
+.contact__form textarea {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background: $color-light;
+    resize: none;
+}
+
+/* Input Focus State */
+.contact__form input:focus,
+.contact__form textarea:focus {
+    border-color: $color-primary;
+}
+
+/* Submit Button */
+.contact__form button {
+    width: fit-content;
+}

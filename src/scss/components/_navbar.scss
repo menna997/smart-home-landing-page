@@ -1,0 +1,62 @@
+/* ==========================================
+                  NAVBAR
+========================================== */
+
+/* Navbar */
+nav {
+    width: 100%;
+    height: 6rem;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: $color-primary;
+}
+
+/* Navbar On Scroll */
+.window-scroll {
+    background: $color-primary;
+    border: 1px solid $color-primary;
+    box-shadow: 0 1rem 1rem $color-primary-variant;
+}
+
+/* Navbar Container */
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Mobile Menu Buttons */
+button {
+    display: none;
+}
+
+/* Navigation Links */
+.nav__items {
+    display: flex;
+    gap: 3rem;
+}
+
+/* Logo */
+.nav__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav__logo h3 {
+    font-size: 1.7rem;
+    color: $color-white;
+}
+
+/* Login & Signup */
+.nav__signin-signup {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}

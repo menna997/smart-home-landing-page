@@ -1,0 +1,30 @@
+/* ==========================================
+                  CLIENTS
+========================================== */
+
+/* Clients Section */
+.clients {
+    text-align: center;
+}
+
+/* Clients Grid */
+.clients__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+/* Client Card */
+.clients__container div {
+    background: $color-light;
+    display: grid;
+    place-items: center;
+    height: 8rem;
+    padding: 3rem;
+    transition: all 300ms ease;
+}
+
+/* Client Card Hover */
+.clients__container div:hover {
+    background: $color-white;
+}

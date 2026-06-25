@@ -1,0 +1,28 @@
+/* ==========================================
+                SUBSCRIPTION
+========================================== */
+
+/* Subscription Container */
+.subscribe__container {
+    width: 64% !important;
+    height: 20rem;
+    padding: 4rem;
+
+    display: flex;
+    align-items: center;
+
+    background: $color-primary;
+    color: $color-white;
+    border-radius: 2rem;
+}
+
+/* Subscription Content */
+.subscribe__text {
+    width: 80%;
+}
+
+/* Subscription Description */
+.subscribe__text p {
+    width: 80%;
+    margin-top: 1.4rem;
+}

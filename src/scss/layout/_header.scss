@@ -1,0 +1,114 @@
+/* ==========================================
+                    HEADER
+========================================== */
+
+/* Header Section */
+header {
+  background: url("../assets/images/header.jpg") no-repeat top center/100vw;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+  text-align: center;
+  padding-bottom: $bottom-section-padding;
+}
+
+/* Header Container */
+.header__container {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+/* Header Title */
+.header__title {
+  padding-top: 12rem;
+  color: $color-white;
+}
+
+/* Header Description */
+header p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0;
+}
+
+/* Hero Image */
+.header__image img {
+  width: 92%;
+  margin: 0 auto;
+}
+
+/* ==========================================
+                     CTA
+========================================== */
+
+/* CTA Container */
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* CTA Button */
+.cta a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1.6rem;
+
+  text-align: left;
+  font-weight: 400;
+  color: $color-white;
+
+  background: #000;
+  border-radius: 0.7rem;
+}
+
+/* CTA Button Hover */
+.cta a:hover {
+  background: $color-black;
+  color: $color-white;
+}
+
+/* CTA Logo */
+.cta .logo {
+  width: 2rem;
+}
+
+/* CTA Title */
+.cta a h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/* ==========================================
+                HEADER SOCIALS
+========================================== */
+
+/* Social Links */
+.header__socials {
+  position: absolute;
+  left: 3rem;
+  top: 38%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  font-size: 1.2rem;
+}
+
+/* ==========================================
+              HEADER DECORATIONS
+========================================== */
+
+/* Left Decoration */
+.header__decorator-1 {
+  position: absolute;
+}
+
+/* Right Decoration */
+.header__decorator-2 {
+  position: absolute;
+  right: 0;
+  margin-top: -24rem;
+}

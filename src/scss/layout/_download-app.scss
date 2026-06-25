@@ -1,0 +1,23 @@
+/* ==========================================
+               DOWNLOAD APP
+========================================== */
+
+/* Download App Layout */
+.downloadApp__container {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    align-items: center;
+}
+
+/* Download App Content */
+.downloadApp__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Download App CTA */
+#downloadApp .cta {
+    justify-content: flex-start;
+    margin-top: 2rem;
+}

@@ -1,0 +1,103 @@
+/* ==========================================
+                    FOOTER
+========================================== */
+
+/* Footer Section */
+footer {
+    background: $color-light;
+    padding: 5rem 0 0;
+    font-size: 0.9rem;
+    color: $color-black;
+}
+
+/* Footer Layout */
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+/* Footer Titles */
+.footer__container>div h4 {
+    margin-bottom: 1.6rem;
+    color: $color-black;
+}
+
+/* Footer Logo */
+.footer__logo h3 {
+    font-size: 1.7rem;
+    color: $color-black;
+}
+
+/* Footer Description */
+.footer__1 p {
+    margin: 1rem 0 2rem;
+    width: 20rem;
+}
+
+/* Newsletter Subscribe */
+.footer__subscribe {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+    border: none;
+
+    input {
+        flex: 1;
+        height: 3rem;
+        padding: 0 1rem;
+
+        &::placeholder {
+            color: $color-black;
+        }
+    }
+
+    button {
+        display: block;
+        width: 8rem;
+        height: 3rem;
+        cursor: pointer;
+        flex-shrink: 0;
+
+        background: $color-white;
+        color: $color-black;
+        border: 1px solid $color-black;
+
+        &:hover {
+            background: $color-light;
+            color: $color-primary;
+        }
+    }
+}
+
+/* Footer Links */
+footer a {
+    color: $color-black;
+}
+
+footer ul li {
+    margin-bottom: 1rem;
+
+    &:hover {
+        color: $color-primary;
+        text-decoration: underline;
+    }
+}
+
+/* Social Section */
+.footer__4 p {
+    margin-bottom: 1.6rem;
+}
+
+/* Copyright */
+.copyright {
+    width: 100%;
+    margin-top: 4rem;
+    padding: 1.2rem;
+
+    text-align: center;
+    color: $color-white;
+    background: rgba(0, 15, 55, 1);
+}

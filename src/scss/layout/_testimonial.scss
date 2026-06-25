@@ -1,0 +1,55 @@
+/* ==========================================
+                TESTIMONIALS
+========================================== */
+
+/* Section Title */
+.testimonials h1 {
+    text-align: center;
+}
+
+/* Testimonials Grid */
+.testimonials__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+/* Testimonial Card */
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+
+    padding: 3rem;
+    font-size: 0.88rem;
+
+    background: $color-light;
+    border: 1px solid transparent;
+
+    transition: all 300ms ease;
+}
+
+/* Testimonial Hover */
+.testimonial:hover {
+    background: $color-white;
+    border-color: $color-primary;
+    color: $color-primary;
+    box-shadow: 0 2rem 2rem $color-primary-variant;
+    z-index: 1;
+}
+
+/* Client Info */
+.testimonial__client {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Client Avatar */
+.avatar {
+    flex-shrink: 0;
+}
+
+/* Client Details */
+.testimonial__work small {
+    color: $color-dark;
+}
