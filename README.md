@@ -7,7 +7,7 @@ A responsive Smart Home landing page built using HTML, SCSS, and JavaScript.
 https://www.frontendpro.dev/frontend-coding-challenges/smart-home-landing-page-WuSNP1EbOtFiqO48JSV0
 
 ## GitHub Repository
-
+https://github.com/menna997/smart-home-landing-page
 ## Features
 
 - Responsive design for Desktop, Tablet, and Mobile screens
