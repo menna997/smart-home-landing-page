@@ -101,3 +101,38 @@ footer ul li {
     color: $color-white;
     background: rgba(0, 15, 55, 1);
 }
+
+@media screen and (max-width: 768px) {
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+
+    .footer__1 p {
+        width: 100%;
+    }
+
+    .footer__subscribe {
+        width: 100%;
+    }
+
+    .footer__subscribe input {
+        min-width: 0;
+    }
+
+    .copyright {
+        margin-top: 12px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer__1,
+    .footer__1 p {
+        width: $container-width-phone;
+    }
+}

@@ -6,17 +6,15 @@
 
 /* components */
 @import "components/buttons";
-@import "components/navbar";
 @import "components/faq";
 @import "components/contact";
+@import "components/header";
+@import "components/about";
+@import "components/clients";
+@import "components/testimonial";
+@import "components/download-app";
+@import "components//subscription";
 
 /* layout */
-@import "layout/header";
-@import "layout/about";
-@import "layout/clients";
-@import "layout/testimonial";
-@import "layout/download-app";
-@import "layout/subscription";
 @import "layout/footer";
-
-@import "layout/responsive";
+@import "layout/navbar";

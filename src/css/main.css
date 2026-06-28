@@ -12,6 +12,41 @@ html {
   scroll-behavior: smooth;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    max-width: 90%;
+  }
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.9rem;
+  }
+  .lead {
+    width: 72%;
+    margin-bottom: 0;
+  }
+  section {
+    padding-bottom: 8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 8px;
+  }
+}
 body {
   font-family: "Poppins", sans-serif;
   color: #575757;
@@ -42,6 +77,41 @@ a {
   font-weight: 300;
 }
 
+@media screen and (max-width: 1024px) {
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 0px;
+  }
+}
 img {
   max-width: 100%;
   height: auto;
@@ -73,6 +143,30 @@ section {
   margin: 1.5rem auto 3rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    max-width: 90%;
+  }
+  .lead {
+    width: 72%;
+    margin-bottom: 0;
+  }
+  section {
+    padding-bottom: 8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .lead {
+    width: 100%;
+    max-width: 80%;
+  }
+}
 /* components */
 /* ================= BUTTONS ================= */
 /* Base Button Style */
@@ -97,68 +191,6 @@ section {
   background: #fff;
   color: #000f37;
   border-color: #000f37;
-}
-
-/* ==========================================
-                  NAVBAR
-========================================== */
-/* Navbar */
-nav {
-  width: 100%;
-  height: 6rem;
-  display: grid;
-  place-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  background: #1e5afa;
-}
-
-/* Navbar On Scroll */
-.window-scroll {
-  background: #1e5afa;
-  border: 1px solid #1e5afa;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 240, 0.2);
-}
-
-/* Navbar Container */
-.nav__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-/* Mobile Menu Buttons */
-button {
-  display: none;
-}
-
-/* Navigation Links */
-.nav__items {
-  display: flex;
-  gap: 3rem;
-}
-
-/* Logo */
-.nav__logo {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.nav__logo h3 {
-  font-size: 1.7rem;
-  color: #fff;
-}
-
-/* Login & Signup */
-.nav__signin-signup {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
 }
 
 /* ==========================================
@@ -275,7 +307,18 @@ button {
   width: fit-content;
 }
 
-/* layout */
+@media only screen and (max-width: 600px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .contact__info {
+    text-align: center;
+  }
+  .contact__form button {
+    width: 100%;
+  }
+}
 /* ==========================================
                     HEADER
 ========================================== */
@@ -383,6 +426,50 @@ header p {
   margin-top: -24rem;
 }
 
+@media screen and (max-width: 1024px) {
+  header {
+    padding-bottom: 8rem;
+  }
+  .header__title {
+    padding-bottom: 0.5rem;
+    padding-top: 10rem;
+  }
+  .cta {
+    margin-top: 3rem;
+  }
+  .header__socials {
+    top: 24%;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  .header__decorator-2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    background: url(../assets/images/header.jpg) no-repeat top/140vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header {
+    background: url(../assets/images/header.jpg) no-repeat top/200vw;
+  }
+  .header__title {
+    padding-top: 11rem;
+  }
+  .cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .cta a {
+    width: 100%;
+  }
+  .header__socials {
+    display: none;
+  }
+}
 /* ==========================================
                     ABOUT
 ========================================== */
@@ -408,6 +495,22 @@ header p {
   margin-top: 2.4rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .about__article {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about__article {
+    grid-template-columns: 1fr;
+    margin-top: 5rem;
+    text-align: center;
+    gap: 0;
+  }
+  .about__article:nth-child(2) .about__image {
+    grid-row: 1;
+  }
+}
 /* ==========================================
                   CLIENTS
 ========================================== */
@@ -438,6 +541,17 @@ header p {
   background: #fff;
 }
 
+@media screen and (max-width: 1024px) {
+  .clients__container {
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .clients__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
 /* ==========================================
                 TESTIMONIALS
 ========================================== */
@@ -490,6 +604,18 @@ header p {
   color: #575757;
 }
 
+@media only screen and (max-width: 600px) {
+  .testimonials__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .testimonial {
+    padding: 1.5rem;
+  }
+  .testimonial__client {
+    align-items: center;
+  }
+}
 /* ==========================================
                DOWNLOAD APP
 ========================================== */
@@ -513,6 +639,11 @@ header p {
   margin-top: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  #downloadApp .cta {
+    flex-wrap: wrap;
+  }
+}
 /* ==========================================
                 SUBSCRIPTION
 ========================================== */
@@ -539,6 +670,15 @@ header p {
   margin-top: 1.4rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .subscribe__container {
+    width: 84% !important;
+  }
+  .subscribe__text {
+    width: 70%;
+  }
+}
+/* layout */
 /* ==========================================
                     FOOTER
 ========================================== */
@@ -635,6 +775,96 @@ footer ul li:hover {
   background: rgb(0, 15, 55);
 }
 
+@media screen and (max-width: 768px) {
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  .footer__1 p {
+    width: 100%;
+  }
+  .footer__subscribe {
+    width: 100%;
+  }
+  .footer__subscribe input {
+    min-width: 0;
+  }
+  .copyright {
+    margin-top: 12px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footer__1,
+  .footer__1 p {
+    width: 100%;
+  }
+}
+/* ==========================================
+                  NAVBAR
+========================================== */
+/* Navbar */
+nav {
+  width: 100%;
+  height: 6rem;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #1e5afa;
+}
+
+/* Navbar On Scroll */
+.window-scroll {
+  background: #1e5afa;
+  border: 1px solid #1e5afa;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 240, 0.2);
+}
+
+/* Navbar Container */
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Mobile Menu Buttons */
+button {
+  display: none;
+}
+
+/* Navigation Links */
+.nav__items {
+  display: flex;
+  gap: 3rem;
+}
+
+/* Logo */
+.nav__logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav__logo h3 {
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+/* Login & Signup */
+.nav__signin-signup {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
 /* ==========================================
                 RESPONSIVE
 ========================================== */
@@ -642,25 +872,6 @@ footer ul li:hover {
                 TABLET (1024px)
 ========================================== */
 @media screen and (max-width: 1024px) {
-  /* Global */
-  .container {
-    width: 100%;
-    max-width: 90%;
-  }
-  h1,
-  h2 {
-    font-size: 2rem;
-  }
-  h3 {
-    font-size: 1.9rem;
-  }
-  .lead {
-    width: 72%;
-    margin-bottom: 0;
-  }
-  section {
-    padding-bottom: 8rem;
-  }
   /* Navbar */
   .nav__container {
     position: relative;
@@ -719,92 +930,6 @@ footer ul li:hover {
   nav button i {
     font-size: 2.4rem;
   }
-  /* Header */
-  header {
-    padding-bottom: 8rem;
-  }
-  .header__title {
-    padding-bottom: 0.5rem;
-    padding-top: 10rem;
-  }
-  .cta {
-    margin-top: 3rem;
-  }
-  .header__socials {
-    top: 24%;
-    gap: 1rem;
-    font-size: 1rem;
-  }
-  .header__decorator-2 {
-    display: none;
-  }
-  /* About */
-  .about__article {
-    margin: 0 auto;
-  }
-  /* Clients */
-  .clients__container {
-    gap: 1rem;
-  }
-  /* Subscription */
-  .subscribe__container {
-    width: 84% !important;
-  }
-  .subscribe__text {
-    width: 70%;
-  }
-}
-/* ==========================================
-                TABLET (768px)
-========================================== */
-@media screen and (max-width: 768px) {
-  /* Global */
-  .container {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 20px;
-  }
-  html {
-    font-size: 14px;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 1.8rem;
-  }
-  h3 {
-    font-size: 1.4rem;
-  }
-  .lead {
-    width: 100%;
-    max-width: 80%;
-  }
-  /* Header */
-  header {
-    background: url(../assets/images/header.jpg) no-repeat top/140vw;
-  }
-  /* Download App */
-  #downloadApp .cta {
-    flex-wrap: wrap;
-  }
-  /* Footer */
-  .footer__container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-  }
-  .footer__1 p {
-    width: 100%;
-  }
-  .footer__subscribe {
-    width: 100%;
-  }
-  .footer__subscribe input {
-    min-width: 0;
-  }
-  .copyright {
-    margin-top: 12px;
-  }
 }
 /* ==========================================
                 MOBILE (600px)
@@ -827,75 +952,6 @@ footer ul li:hover {
   }
   nav button {
     margin-right: 0.7rem;
-  }
-  /* Header */
-  header {
-    background: url(../assets/images/header.jpg) no-repeat top/200vw;
-  }
-  .header__title {
-    padding-top: 11rem;
-  }
-  .cta {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  .header__socials {
-    display: none;
-  }
-  /* About */
-  .about__article {
-    grid-template-columns: 1fr;
-    margin-top: 5rem;
-    text-align: center;
-    gap: 0;
-  }
-  .about__article:nth-child(2) .about__image {
-    grid-row: 1;
-  }
-  /* Clients */
-  .clients__container {
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-  }
-  /* Testimonials */
-  .testimonials__container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .testimonial {
-    padding: 1.5rem;
-  }
-  .testimonial__client {
-    align-items: center;
-  }
-  /* Contact */
-  .contact__container {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-  .contact__info {
-    text-align: center;
-  }
-  .contact__form button {
-    width: 100%;
-  }
-  /* Footer */
-  .footer__container {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  .footer__1,
-  .footer__1 p {
-    width: 100%;
-  }
-}
-/* ==========================================
-                SMALL DEVICES (320px)
-========================================== */
-@media only screen and (max-width: 320px) {
-  html {
-    font-size: 8px;
   }
 }
 

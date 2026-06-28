@@ -26,3 +26,12 @@
     width: 80%;
     margin-top: 1.4rem;
 }
+@media screen and (max-width: 1024px) {
+    .subscribe__container {
+        width: 84% !important;
+    }
+
+    .subscribe__text {
+        width: 70%;
+    }
+}

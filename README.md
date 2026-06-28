@@ -54,21 +54,21 @@ Smart Home Landing Page
 │       │   └── _variables.scss
 │       │
 │       ├── components
-│       │   ├── _buttons.scss
-│       │   ├── _navbar.scss
-│       │   ├── _faq.scss
-│       │   └── _contact.scss
-│       │
-│       ├── layout
-│       │   ├── _header.scss
 │       │   ├── _about.scss
+│       │   ├── _buttons.scss
 │       │   ├── _clients.scss
-│       │   ├── _testimonial.scss
+│       │   ├── _contact.scss
 │       │   ├── _download-app.scss
+│       │   ├── _faq.scss
+│       │   ├── _header.scss
+│       │   ├── _responsive.scss
 │       │   ├── _subscription.scss
-│       │   ├── _footer.scss
-│       │   └── _responsive.scss
+│       │   └── _testimonial.scss
 │       │
+│       │   
+│       ├── layout
+│       │   ├── _navbar.scss
+│       │   ├── _footer.scss
 │       └── main.scss
 │
 └── README.md

@@ -28,3 +28,16 @@
 .clients__container div:hover {
     background: $color-white;
 }
+
+@media screen and (max-width: 1024px) {
+    .clients__container {
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .clients__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+}

@@ -1,0 +1,174 @@
+/* ==========================================
+                  NAVBAR
+========================================== */
+
+/* Navbar */
+nav {
+    width: 100%;
+    height: 6rem;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: $color-primary;
+}
+
+/* Navbar On Scroll */
+.window-scroll {
+    background: $color-primary;
+    border: 1px solid $color-primary;
+    box-shadow: 0 1rem 1rem $color-primary-variant;
+}
+
+/* Navbar Container */
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Mobile Menu Buttons */
+button {
+    display: none;
+}
+
+/* Navigation Links */
+.nav__items {
+    display: flex;
+    gap: 3rem;
+}
+
+/* Logo */
+.nav__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav__logo h3 {
+    font-size: 1.7rem;
+    color: $color-white;
+}
+
+/* Login & Signup */
+.nav__signin-signup {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* ==========================================
+                RESPONSIVE
+========================================== */
+
+/* ==========================================
+                TABLET (1024px)
+========================================== */
+@media screen and (max-width: 1024px) {
+
+  /* Navbar */
+  .nav__container {
+    position: relative;
+    width: 100%;
+  }
+
+  .nav__logo {
+    position: relative;
+    left: 0;
+    transform: translate(0);
+  }
+
+  .nav__items {
+    position: fixed;
+    top: 6rem;
+    right: 0;
+    background: $color-white;
+    height: max-content;
+    width: 18rem;
+    box-shadow: -2rem 2rem 3rem rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    gap: 0;
+    z-index: 3;
+    display: none;
+  }
+
+  .nav__items li {
+    width: 100%;
+    height: 6rem;
+  }
+
+  .nav__items li a {
+    color: $color-black;
+    width: 100%;
+    height: 100%;
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+    transition: all 400ms ease;
+  }
+
+  .nav__items li a:hover {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  .nav__signin-signup {
+    position: relative;
+    left: 0;
+    transform: translate(0);
+  }
+
+  nav button {
+    display: inline-block;
+    margin-right: 1.4rem;
+    background: transparent;
+    color: $color-white;
+    cursor: pointer;
+  }
+
+  nav button#close-btn {
+    display: none;
+  }
+
+  nav button i {
+    font-size: 2.4rem;
+  }
+
+
+}
+
+
+/* ==========================================
+                MOBILE (600px)
+========================================== */
+@media only screen and (max-width: 600px) {
+
+  /* Global */
+  html {
+    font-size: 12px;
+  }
+
+  /* Navbar */
+  .nav__logo {
+    margin-left: 1rem;
+  }
+
+  .nav__logo h3 {
+    font-size: 1rem;
+  }
+
+  .nav__items li a {
+    justify-content: center;
+    padding: 0;
+  }
+
+  nav button {
+    margin-right: 0.7rem;
+  }
+
+}
+

@@ -53,3 +53,18 @@
 .testimonial__work small {
     color: $color-dark;
 }
+
+@media only screen and (max-width: 600px) {
+    .testimonials__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .testimonial {
+        padding: 1.5rem;
+    }
+
+    .testimonial__client {
+        align-items: center;
+    }
+}

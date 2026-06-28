@@ -28,3 +28,34 @@ section {
     font-weight: 300;
     margin: 1.5rem auto 3rem;
 }
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: $container-width-tablet;
+        max-width: 90%;
+    }
+
+    .lead {
+        width: 72%;
+        margin-bottom: 0;
+    }
+
+    section {
+        padding-bottom: $bottom-section-padding-mobile;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: $container-width-tablet;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .lead {
+        width: $container-width-phone;
+        max-width: 80%;
+    }
+}
+
